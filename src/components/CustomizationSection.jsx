@@ -11,16 +11,13 @@ const CustomizationSection = () => {
               <span className="text-white font-bold text-2xl">⚙</span>
             </div>
             <h3 className="text-3xl font-bold mb-4">
-              2 Hrs Free
-              <br />
-              Customization Offer
+              QUANTUM AMPLIFY
             </h3>
             <p className="text-slate-300 mb-6 text-sm leading-relaxed">
-              Buy any template from Radiant Templates (From $79 onwards) and get
-              2 hours free customization/fix (worth $60) on your under
-              development site. You need to book customization within 15 days of
-              purchasing a template. After 15 days we won’t be able to honor the
-              request.
+              Quantum Amplify provides comprehensive marketing assistance to global Information and Communication Technology vendors, enabling them to strengthen visibility and accelerate market outreach.
+
+              <br /> <br />Our support includes blogs, webinars, events, whitepapers, newsletters, case studies, digital campaigns, and social media promotions, all tailored to amplify vendor presence. We help vendors create awareness, communicate product updates, and highlight innovations to engage their target audience effectively. With a focus on global reach, Quantum Amplify ensures vendors connect with end-users across specific markets, building stronger brand recognition and thought leadership.
+
             </p>
             <button className="px-6 py-3 bg-gradient-to-r from-orange-500 to-pink-600 rounded-full font-semibold shadow hover:opacity-90 transition">
               Get Started Today
@@ -31,21 +28,34 @@ const CustomizationSection = () => {
           <div className="bg-gradient-to-br from-[rgba(28,26,53,1)] to-[rgba(9,14,23,1)] rounded-3xl p-8 text-center shadow-xl flex flex-col justify-between">
             <div>
               <h3 className="text-3xl font-bold mb-4">
-                Explore Our Comprehensive Library
-                <br />
-                For A Complete Collection Of Resources
+                QUANTUM SCOPE
               </h3>
+              {/* \<br /> */}
+              <h5 className="text-xl font mb-4">
+                Systematic Competitive Outlook for Precision and Endurance
+              </h5>
+              <br />
+
+
+              <p className="text-slate-300 mb-6 text-sm leading-relaxed">
+                Quantum Scope is a leadership-grade strategic command system designed for the age of cutting-edge technologies, risk complexity, and dynamic market shifts. It helps organizations to reframe strategic management as a precision, arming executives with the clarity and confidence to lead with intent, not instinct.
+
+                <br /> <br />The X-axis represents Tech Innovation, demonstrating how technological advancements unfold over time. It showcases various levels of technology development and their impact on industries.
+                <br />The Y-axis signifies Market Share, illustrating the proportion of market occupied by different products or firms. It highlights competitive landscape dynamics in various sectors.
+              </p>
+
               <button className="px-6 py-3 bg-gradient-to-r from-orange-500 to-pink-600 rounded-full font-semibold shadow mb-8 hover:opacity-90 transition">
                 Explore Our Full Library
               </button>
+
             </div>
-            <div className="flex justify-center">
+            {/* <div className="flex justify-center">
               <img
                 src="https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/682ab797d7d614e5dbf534e7_Group%25201009003723-p-800.webp"
                 alt="Library Preview"
                 className="rounded-2xl shadow-2xl max-w-xs hover:scale-[1.02] transition-transform"
               />
-            </div>
+            </div> */}
           </div>
         </div>
 

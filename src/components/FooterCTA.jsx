@@ -48,14 +48,14 @@ const FooterCTA = () => {
         
         {/* Logo */}
         <div className="w-12 h-12 bg-gradient-to-br from-[rgba(28,26,53,1)] to-[rgba(9,14,23,1)] rounded-lg mx-auto mb-3 flex items-center justify-center">
-          <span className="text-white font-bold text-xl">A</span>
+          <img src="/logo-rb.png" alt="A" className="h-18 w-auto" />
         </div>
-        <p className="font-semibold text-lg mb-6">Aurexa</p>
+        <p className="font-semibold text-lg mb-6">Quantum Quest Insights</p>
         
         {/* CTA Content */}
         <h2 className="text-2xl lg:text-3xl font-bold mb-6">
-          Want Us To Customize Aurexa Or Create A<br />
-          New Design For You? Please Get In Touch!
+          Want Us To Customize Quantum Quest Insights<br />
+          Please Get In Touch!
         </h2>
         
         <button className="bg-yellow-500 hover:bg-yellow-400 text-black font-semibold rounded-full mb-10 text-lg px-8 py-3 transition-all duration-300">

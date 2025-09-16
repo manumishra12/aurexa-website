@@ -3,47 +3,47 @@ import React from "react";
 const InnerPagesSection = () => {
   const pages = [
     {
-      title: "About Us",
+      title: " Vendor and Client Engagement",
       imageUrl:
         "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683949477d96ecf045ba517b_Mask%20group%20-%202025-05-30T112752.952-p-800.webp",
     },
     {
-      title: "Service",
+      title: " Data Collection",
       imageUrl:
         "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683833863fee3ce9f9851348_Mask%20group%20-%202025-05-29T154409.668-p-500.webp",
     },
+    // {
+    //   title: "Features Page",
+    //   imageUrl:
+    //     "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/6839494737ce88fb60260c3f_Mask%20group%20-%202025-05-30T112801.905-p-500.webp",
+    // },
+    // {
+    //   title: "Contact",
+    //   imageUrl:
+    //     "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/68383431a697dbb469a5f7bf_Mask%20group%20-%202025-05-29T154618.986-p-500.webp",
+    // },
+    // {
+    //   title: "Pricing",
+    //   imageUrl:
+    //     "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683834313946a28aa460e20b_Mask%20group%20-%202025-05-29T154628.472-p-500.webp",
+    // },
     {
-      title: "Features Page",
-      imageUrl:
-        "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/6839494737ce88fb60260c3f_Mask%20group%20-%202025-05-30T112801.905-p-500.webp",
-    },
-    {
-      title: "Contact",
-      imageUrl:
-        "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/68383431a697dbb469a5f7bf_Mask%20group%20-%202025-05-29T154618.986-p-500.webp",
-    },
-    {
-      title: "Pricing",
-      imageUrl:
-        "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683834313946a28aa460e20b_Mask%20group%20-%202025-05-29T154628.472-p-500.webp",
-    },
-    {
-      title: "Blog",
+      title: "Data Validation and Cross Verification",
       imageUrl:
         "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/68394947972e2c854533545d_Mask%20group%20-%202025-05-30T112810.717-p-500.webp",
     },
     {
-      title: "Testimonials",
+      title: "Market & Competitive Analysis",
       imageUrl:
         "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683834317d69273f267164f9_Mask%20group%20-%202025-05-29T154645.600-p-500.webp",
     },
     {
-      title: "Careers",
+      title: "Vendor Positioning with Quantum Scope",
       imageUrl:
         "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683834312a74c48a373323e6_Mask%20group%20-%202025-05-29T154653.098-p-500.webp",
     },
     {
-      title: "Terms & Privacy",
+      title: "Insights and Advisory",
       imageUrl:
         "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/68383431a825a392dcf32514_Mask%20group%20-%202025-05-29T154705.026-p-500.webp",
     },
