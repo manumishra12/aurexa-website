@@ -12,21 +12,7 @@ const InnerPagesSection = () => {
       imageUrl:
         "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683833863fee3ce9f9851348_Mask%20group%20-%202025-05-29T154409.668-p-500.webp",
     },
-    // {
-    //   title: "Features Page",
-    //   imageUrl:
-    //     "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/6839494737ce88fb60260c3f_Mask%20group%20-%202025-05-30T112801.905-p-500.webp",
-    // },
-    // {
-    //   title: "Contact",
-    //   imageUrl:
-    //     "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/68383431a697dbb469a5f7bf_Mask%20group%20-%202025-05-29T154618.986-p-500.webp",
-    // },
-    // {
-    //   title: "Pricing",
-    //   imageUrl:
-    //     "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683834313946a28aa460e20b_Mask%20group%20-%202025-05-29T154628.472-p-500.webp",
-    // },
+
     {
       title: "Data Validation and Cross Verification",
       imageUrl:
@@ -52,7 +38,7 @@ const InnerPagesSection = () => {
   return (
     <section className="bg-gradient-to-br from-[rgba(9,14,23,1)] to-[rgba(28,26,53,1)] text-white py-20">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="text-center mb-16">
+        {/* <div className="text-center mb-16">
           <div className="inline-block bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
             ⚡ UNIQUE INNER PAGES
           </div>
@@ -60,7 +46,7 @@ const InnerPagesSection = () => {
             Great Collection{" "}
             <span className="italic text-purple-300">Of Inner Pages</span>
           </h2>
-        </div>
+        </div> */}
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {pages.map((page, idx) => (

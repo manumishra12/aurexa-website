@@ -1,28 +1,10 @@
 import React from 'react';
 
 const FeaturesSection = () => {
-    const homePages = [
-        {
-            title: 'Home One',
-            description: 'Modern AI Dashboard',
-            gradient: 'from-purple-600 to-purple-800'
-        },
-        {
-            title: 'Home Two',
-            description: 'Analytics Platform',
-            gradient: 'from-blue-600 to-purple-800'
-        },
-        {
-            title: 'Home Three',
-            description: 'SaaS Interface',
-            gradient: 'from-purple-800 to-pink-800'
-        }
-    ];
-
     return (
         <section
             className="text-white py-20"
-            style={{ background: "linear-gradient(135deg, rgba(9,14,23,1) 0%, rgba(28,26,53,1) 100%)" }}
+            style={{ background: "linear-gradient(135deg, #342885 0%, #4851CC 30%, #257992dd 60%, #51f6d0ff 100%)" }}
         >
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 {/* Heading + Quote */}
@@ -48,18 +30,19 @@ const FeaturesSection = () => {
 
                 {/* Feature Cards */}
                 <div className="grid md:grid-cols-2 gap-10 mb-20">
-                    <div className="bg-[#1C1A35] rounded-2xl p-10 border border-slate-700 hover:shadow-lg transition">
+                    <div className="bg-[#1C1A35] rounded-2xl p-10 border border-white/20 shadow-xl bg-white/10 backdrop-blur-sm transition-transform duration-300">
+
                         <div className="flex items-start justify-between mb-6">
                             <div>
-                                <h3 className="text-5xl font-bold mb-2 text-gray-100">16+</h3>
-                                <p className="text-slate-300 text-lg">Unique Pages</p>
+                                <h3 className="text-5xl font-bold mb-2 text-gray-100">10+</h3>
+                                <p className="text-slate-300 text-lg">Clients</p>
                             </div>
                             <div
-                                className="w-50 h-60 rounded-lg animate-float overflow-hidden"
-                                style={{ background: "linear-gradient(135deg, rgba(9,14,23,1), rgba(28,26,53,1))" }}
+                                className="w-[200px] h-60 rounded-lg animate-float overflow-hidden"
+                                style={{ background: "linear-gradient(135deg, rgba(186, 196, 217, 0.58), rgba(188, 188, 188, 0.49))" }}
                             >
                                 <img
-                                    src="https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/6825e04ed78cee4932a66a60_Mask%20group%20(10).webp"
+                                    src="https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/6825e04ed78cee4932a66a60_Mask%20group%20%20(10).webp"
                                     alt="Feature Preview"
                                     className="w-full h-full object-cover"
                                 />
@@ -70,18 +53,18 @@ const FeaturesSection = () => {
                         </p>
                     </div>
 
-                    <div className="bg-[#1C1A35] rounded-2xl p-10 border border-slate-700 hover:shadow-lg transition">
+                    <div className="bg-[#1C1A35] rounded-2xl p-10 border border-white/20 shadow-xl bg-white/10 backdrop-blur-sm transition-transform duration-300">
                         <div className="flex items-start justify-between mb-6">
                             <div>
-                                <h3 className="text-5xl font-bold mb-2 text-gray-100">80+</h3>
-                                <p className="text-slate-300 text-lg">Sections & Blocks</p>
+                                <h3 className="text-5xl font-bold mb-2 text-gray-100">20+</h3>
+                                <p className="text-slate-300 text-lg">Case Studies</p>
                             </div>
                             <div
-                                className="w-50 h-60 rounded-lg animate-float overflow-hidden"
-                                style={{ background: "linear-gradient(135deg, rgba(9,14,23,1), rgba(28,26,53,1))" }}
+                                className="w-[200px] h-60 rounded-lg animate-float overflow-hidden"
+                                style={{ background: "linear-gradient(135deg, rgba(186, 196, 217, 0.58), rgba(188, 188, 188, 0.49))" }}
                             >
                                 <img
-                                    src="https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/6825e04ed78cee4932a66a60_Mask%20group%20(10).webp"
+                                    src="https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/6825e04ed78cee4932a66a60_Mask%20group%20%20(10).webp"
                                     alt="Feature Preview"
                                     className="w-full h-full object-cover"
                                 />
@@ -95,10 +78,8 @@ const FeaturesSection = () => {
 
                 {/* Figma File */}
                 <div className="bg-white text-slate-900 rounded-2xl p-8 flex flex-col sm:flex-row items-center justify-between gap-6">
-                    <div className="flex items-center gap-4 mt-4 mb-4">
-                        <div
-                            className="w-14 h-14 rounded-xl flex items-center justify-center"
-                        >
+                    <div className="flex items-center gap-4">
+                        <div className="w-14 h-14 rounded-xl flex items-center justify-center">
                             <img
                                 src="https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/6825e04ed78cee4932a66a49_Group%201597883353.svg"
                                 alt="Aurexa Logo"
@@ -113,7 +94,8 @@ const FeaturesSection = () => {
                             </p>
                         </div>
                     </div>
-                    <button className="px-6 py-3 rounded-xl text-white font-semibold shadow hover:opacity-90 transition"
+                    <button
+                        className="px-6 py-3 rounded-xl text-white font-semibold shadow hover:opacity-90 transition"
                         style={{ background: "orange" }}
                     >
                         Request For Figma File
@@ -127,86 +109,83 @@ const FeaturesSection = () => {
                     </h3>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-10 mb-20">
-                    <div className="bg-[#1C1A35] rounded-2xl p-4 border border-slate-700 hover:shadow-lg transition">
+                {/* First row: 3 cards in grid */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20 hover:shadow-xl transition">
                         <div className="rounded-xl overflow-hidden mb-4">
                             <img
                                 src="https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683949073075df68239088e7_Mask%20group%20-%202025-05-30T112734.836-p-500.webp"
-                                alt="Home One"
+                                alt="Quantum Scope"
                                 className="w-full h-auto object-cover"
                             />
                         </div>
-                        <p className="text-center text-slate-300 font-medium">Quantum Scope</p>
-                        <p className="text-center text-slate-300 font-medium">Enables competitive positioning of vendors by analyzing technology capabilities and market share.</p>
+                        <p className="text-center text-white font-semibold">Quantum Scope</p>
+                        <p className="text-center text-slate-300 text-sm mt-2 leading-relaxed">
+                            Enables competitive positioning of vendors by analyzing technology capabilities and market share.
+                        </p>
                     </div>
 
-                    <div className="bg-[#1C1A35] rounded-2xl p-4 border border-slate-700 hover:shadow-lg transition">
-                        <div className="rounded-xl overflow-hidden mb-4">
-                            <img
-                                src="https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/68394907e834ceab8b38c8a3_Mask%20group%20-%202025-05-30T112740.334-p-500.webp"
-                                alt="Home Two"
-                                className="w-full h-auto object-cover"
-                            />
-                        </div>
-                        <p className="text-center text-slate-300 font-medium">Quantum 360</p>
-                        <p className="text-center text-slate-300 font-medium">Delivers comprehensive market insights, including competitive advantage, product intelligence, and customer understanding.</p>
-                    </div>
-
-                    <div className="bg-[#1C1A35] rounded-2xl p-4 border border-slate-700 hover:shadow-lg transition">
+                    <div className="bg-[#1C1A35] rounded-2xl p-10 border border-white/20 shadow-xl bg-white/10 backdrop-blur-sm transition-transform duration-300">
                         <div className="rounded-xl overflow-hidden mb-4">
                             <img
                                 src="https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683949063ea4d58c120773ee_Mask%20group%20-%202025-05-30T112745.416-p-500.webp"
-                                alt="Home Three"
+                                alt="Quantum Market Intel"
                                 className="w-full h-auto object-cover"
                             />
                         </div>
                         <p className="text-center text-slate-300 font-medium">Quantum Market Intel</p>
-                        <p className="text-center text-slate-300 font-medium">Offers in-depth analysis of market share, industry trends, customer segments, and regional dynamics.</p>
+                        <p className="text-center text-slate-300 text-sm mt-2">
+                            Offers in-depth analysis of market share, industry trends, customer segments, and regional dynamics.
+                        </p>
                     </div>
 
-                    <div className="bg-[#1C1A35] rounded-2xl p-4 border border-slate-700 hover:shadow-lg transition">
+                    <div className="bg-[#1C1A35] rounded-2xl p-10 border border-white/20 shadow-xl bg-white/10 backdrop-blur-sm transition-transform duration-300">
                         <div className="rounded-xl overflow-hidden mb-4">
                             <img
                                 src="https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683949063ea4d58c120773ee_Mask%20group%20-%202025-05-30T112745.416-p-500.webp"
-                                alt="Home Three"
+                                alt="Quantum Amplify"
                                 className="w-full h-auto object-cover"
                             />
                         </div>
                         <p className="text-center text-slate-300 font-medium">Quantum Amplify</p>
-                        <p className="text-center text-slate-300 font-medium">Provides strategic marketing support to help vendors strengthen their market presence and maximize impact. </p>
+                        <p className="text-center text-slate-300 text-sm mt-2">
+                            Provides strategic marketing support to help vendors strengthen their market presence and maximize impact.
+                        </p>
                     </div>
+                </div>
 
-                    <div className="bg-[#1C1A35] rounded-2xl p-4 border border-slate-700 hover:shadow-lg transition">
+                {/* Second row: 2 cards, centered, same size */}
+                <div className="flex justify-center gap-10 flex-wrap">
+                    <div className="bg-[#1C1A35] rounded-2xl p-10 border border-white/20 shadow-xl bg-white/10 backdrop-blur-sm transition-transform duration-300 w-full max-w-[350px]">
                         <div className="rounded-xl overflow-hidden mb-4">
                             <img
                                 src="https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683949063ea4d58c120773ee_Mask%20group%20-%202025-05-30T112745.416-p-500.webp"
-                                alt="Home Three"
+                                alt="Quantum Consulting"
                                 className="w-full h-auto object-cover"
                             />
                         </div>
                         <p className="text-center text-slate-300 font-medium">Quantum Consulting</p>
-                        <p className="text-center text-slate-300 font-medium">Provides expert advisory services to organizations, helping them optimize technology strategies, streamline operations, and unlock new growth opportunities through tailored research and consulting solutions.</p>
+                        <p className="text-center text-slate-300 text-sm mt-2">
+                            Provides expert advisory services to organizations, helping them optimize technology strategies, streamline operations, and unlock new growth opportunities through tailored research and consulting solutions.
+                        </p>
                     </div>
 
-                    <div className="bg-[#1C1A35] rounded-2xl p-4 border border-slate-700 hover:shadow-lg transition">
+                    <div className="bg-[#1C1A35] rounded-2xl p-10 border border-white/20 shadow-xl bg-white/10 backdrop-blur-sm transition-transform duration-300 w-full max-w-[350px]">
                         <div className="rounded-xl overflow-hidden mb-4">
                             <img
                                 src="https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/68394907e834ceab8b38c8a3_Mask%20group%20-%202025-05-30T112740.334-p-500.webp"
-                                alt="Home Two"
+                                alt="Quantum 360"
                                 className="w-full h-auto object-cover"
                             />
                         </div>
                         <p className="text-center text-slate-300 font-medium">Quantum 360</p>
-                        <p className="text-center text-slate-300 font-medium">Delivers comprehensive market insights, including competitive advantage, product intelligence, and customer understanding.</p>
+                        <p className="text-center text-slate-300 text-sm mt-2">
+                            Delivers comprehensive market insights, including competitive advantage, product intelligence, and customer understanding.
+                        </p>
                     </div>
-
                 </div>
-
-
             </div>
         </section>
-
-
     );
 };
 
