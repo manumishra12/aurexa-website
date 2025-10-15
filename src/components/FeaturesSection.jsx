@@ -125,7 +125,7 @@ const FeaturesSection = () => {
                         </p>
                     </div>
 
-                    <div className="bg-[#1C1A35] rounded-2xl p-10 border border-white/20 shadow-xl bg-white/10 backdrop-blur-sm transition-transform duration-300">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20 hover:shadow-xl transition">
                         <div className="rounded-xl overflow-hidden mb-4">
                             <img
                                 src="https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683949063ea4d58c120773ee_Mask%20group%20-%202025-05-30T112745.416-p-500.webp"
@@ -139,7 +139,7 @@ const FeaturesSection = () => {
                         </p>
                     </div>
 
-                    <div className="bg-[#1C1A35] rounded-2xl p-10 border border-white/20 shadow-xl bg-white/10 backdrop-blur-sm transition-transform duration-300">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20 hover:shadow-xl transition">
                         <div className="rounded-xl overflow-hidden mb-4">
                             <img
                                 src="https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683949063ea4d58c120773ee_Mask%20group%20-%202025-05-30T112745.416-p-500.webp"
@@ -156,7 +156,7 @@ const FeaturesSection = () => {
 
                 {/* Second row: 2 cards, centered, same size */}
                 <div className="flex justify-center gap-10 flex-wrap">
-                    <div className="bg-[#1C1A35] rounded-2xl p-10 border border-white/20 shadow-xl bg-white/10 backdrop-blur-sm transition-transform duration-300 w-full max-w-[350px]">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20 hover:shadow-xl transition-transform duration-300 w-full max-w-[350px]">
                         <div className="rounded-xl overflow-hidden mb-4">
                             <img
                                 src="https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683949063ea4d58c120773ee_Mask%20group%20-%202025-05-30T112745.416-p-500.webp"
@@ -170,7 +170,7 @@ const FeaturesSection = () => {
                         </p>
                     </div>
 
-                    <div className="bg-[#1C1A35] rounded-2xl p-10 border border-white/20 shadow-xl bg-white/10 backdrop-blur-sm transition-transform duration-300 w-full max-w-[350px]">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20 hover:shadow-xl  transition-transform duration-300 w-full max-w-[350px]">
                         <div className="rounded-xl overflow-hidden mb-4">
                             <img
                                 src="https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/68394907e834ceab8b38c8a3_Mask%20group%20-%202025-05-30T112740.334-p-500.webp"

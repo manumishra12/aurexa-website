@@ -7,12 +7,12 @@ const Header = () => {
     <header className="relative text-white min-h-screen overflow-hidden">
       <Navigation />
 
-      {/* Transparent background image (larger size) */}
-      <div className="absolute bottom-0 right-0 z-0 opacity-25 pointer-events-none">
+      {/* Centered decorative background image */}
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0 opacity-25 pointer-events-none">
         <img
           src="/background.png"
           alt="Background"
-          className="w-[190%] md:w-[190%] lg:w-[250%] h-auto object-cover object-bottom-right translate-x-20 translate-y-10 scale-110"
+          className="w-[120%] max-w-none h-auto object-contain scale-110"
         />
       </div>
 
@@ -41,7 +41,7 @@ const Header = () => {
 
           <h1 className="text-3xl lg:text-5xl font-bold mb-6 leading-tight">
             Quantum Quest Insights <br />
-            IT/Research <span className="italic text-gray-200">& Advisory</span>
+            IT/Research <span className="italic text-white-900">& Advisory</span>
           </h1>
 
           <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-semibold shadow transition mb-20">

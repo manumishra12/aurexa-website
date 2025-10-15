@@ -38,7 +38,7 @@ const ServicesPage = () => {
             <span className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-xs font-bold tracking-wider mb-4">
               OUR EXPERTISE
             </span>
-            <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">Our Services</h1>
+            <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">Who we Serve</h1>
             <p className="text-xl text-slate-300 max-w-2xl mx-auto">
               Comprehensive solutions designed to empower your organization with strategic insights and technological excellence.
             </p>

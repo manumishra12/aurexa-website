@@ -37,7 +37,7 @@ const Navigation = () => {
         //       "linear-gradient(135deg, rgba(9,14,23,1), rgba(28,26,53,1))",
         //   }}
         >
-          <img src="/blue_logo.jpeg" alt="A" className="h-6 w-auto" />
+          <img src="/blue_logo_1.png" alt="A" className="h-6 w-auto" />
         </div>
         <span className="text-xl font-bold text-white">Quantum Quest Insights</span>
       </Link>
