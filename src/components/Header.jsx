@@ -36,12 +36,12 @@ const Header = () => {
       <div className="relative z-10 px-6 lg:px-12 pt-32">
         <div className="max-w-4xl mx-auto text-center mt-20">
           <span className="inline-block bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
-            16+ HIGH-IMPACT PRESENTATIONS
+            Innovative IT Solutions & Research
           </span>
 
           <h1 className="text-3xl lg:text-5xl font-bold mb-6 leading-tight">
             Quantum Quest Insights <br />
-            IT/Research <span className="italic text-white-900">& Advisory</span>
+            IT/Research <span className="italic text-gray-200">& Advisory</span>
           </h1>
 
           <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-semibold shadow transition mb-20">
@@ -51,38 +51,68 @@ const Header = () => {
 
         {/* Cards */}
         <div className="flex flex-col md:flex-row justify-center gap-8 mt-6 max-w-7xl mx-auto pb-16">
-          {[1, 2, 3].map((i) => (
-            <div
-              key={i}
-              className="relative rounded-2xl p-8 border border-white/20 shadow-xl bg-white/10 backdrop-blur-sm w-full md:w-[32%] hover:scale-[1.02] transition-transform duration-300"
-            >
-              <div className="text-center mb-6">
-                <span className="text-orange-400 text-xs font-medium tracking-wider">
-                  {i === 1 ? 'MISSION' : i === 2 ? 'VISION' : 'OBJECTIVE'}
-                </span>
-                <h2 className="text-xl lg:text-2xl font-bold mt-3 mb-4 leading-snug text-white">
-                  {i === 1 ? 'AI Dashboard' : i === 2 ? 'Workflow Automation' : 'Cloud Native'} <br />
-                  <span className="text-gray-300">
-                    {i === 1 ? 'Insights & Analytics' : i === 2 ? 'Boost Productivity' : 'Deployments'}
-                  </span>
-                </h2>
-                <p className="text-slate-300 text-sm max-w-sm mx-auto mb-6">
-                  {i === 1
-                    ? 'To provide transformative insights and market dynamics...'
-                    : i === 2
-                    ? 'We envision a future to pioneer in research market...'
-                    : 'Our key objectives include pushing the boundaries of research...'}
-                </p>
-              </div>
-              <div className="rounded-xl overflow-hidden border border-white/20 mt-6">
-                <img
-                  src="https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683945a1276f22aa8622c317_Home%201%201.webp"
-                  alt="Preview"
-                  className="w-full h-48 object-cover"
-                />
-              </div>
+          {/* Card 1: AI Dashboard */}
+          <div className="relative rounded-2xl p-8 border border-white/20 shadow-xl bg-white/10 backdrop-blur-sm w-full md:w-[32%] hover:scale-[1.02] transition-transform duration-300">
+            <div className="text-center mb-6">
+              <span className="text-orange-400 text-xs font-medium tracking-wider">MISSION</span>
+              <h2 className="text-xl lg:text-2xl font-bold mt-3 mb-4 leading-snug text-white">
+                AI Dashboard <br />
+                <span className="text-gray-300">Insights & Analytics</span>
+              </h2>
+              <p className="text-slate-300 text-sm max-w-sm mx-auto mb-6">
+                To provide transformative insights and market dynamics, empowering global vendors/stakeholders with strategic solutions to grow, compete, and prosper.
+              </p>
             </div>
-          ))}
+            <div className="rounded-xl overflow-hidden border border-white/20 mt-6">
+              <img
+                src="https://images.unsplash.com/photo-1639762681057-408e52192e55?auto=format&fit=crop&w=600&h=300&q=85"
+                alt="AI Dashboard with data visualization"
+                className="w-full h-48 object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Card 2: Workflow Automation */}
+          <div className="relative rounded-2xl p-8 border border-white/20 shadow-xl bg-white/10 backdrop-blur-sm w-full md:w-[32%] hover:scale-[1.02] transition-transform duration-300">
+            <div className="text-center mb-6">
+              <span className="text-orange-400 text-xs font-medium tracking-wider">VISION</span>
+              <h2 className="text-xl lg:text-2xl font-bold mt-3 mb-4 leading-snug text-white">
+                Workflow Automation <br />
+                <span className="text-gray-300">Boost Productivity</span>
+              </h2>
+              <p className="text-slate-300 text-sm max-w-sm mx-auto mb-6">
+                We envision a future to pioneer in research market upholding a sense of trust and reliability amongst global ICT leaders.
+              </p>
+            </div>
+            <div className="rounded-xl overflow-hidden border border-white/20 mt-6">
+              <img
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80"
+                alt="Business automation and workflow"
+                className="w-full h-48 object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Card 3: Cloud Native */}
+          <div className="relative rounded-2xl p-8 border border-white/20 shadow-xl bg-white/10 backdrop-blur-sm w-full md:w-[32%] hover:scale-[1.02] transition-transform duration-300">
+            <div className="text-center mb-6">
+              <span className="text-orange-400 text-xs font-medium tracking-wider">OBJECTIVE</span>
+              <h2 className="text-xl lg:text-2xl font-bold mt-3 mb-4 leading-snug text-white">
+                Cloud Native <br />
+                <span className="text-gray-300">Deployments</span>
+              </h2>
+              <p className="text-slate-300 text-sm max-w-sm mx-auto mb-6">
+                Our key objectives include pushing the boundaries of research, expanding our global reach, and fostering collaboration with leading experts.
+              </p>
+            </div>
+            <div className="rounded-xl overflow-hidden border border-white/20 mt-6">
+              <img
+                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80"
+                alt="Cloud computing and server infrastructure"
+                className="w-full h-48 object-cover"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </header>

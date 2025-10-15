@@ -3,17 +3,17 @@ import React from 'react';
 
 const FooterCTA = () => {
   const carouselImages = [
-    "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683833865f5a5ed1b8f1ad8d_Mask%20group%20-%202025-05-29T154329.041-p-500.webp",
-    "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683833865f5a5ed1b8f1ad8d_Mask%20group%20-%202025-05-29T154329.041-p-500.webp",
-    "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683833865f5a5ed1b8f1ad8d_Mask%20group%20-%202025-05-29T154329.041-p-500.webp",
-    "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683833865f5a5ed1b8f1ad8d_Mask%20group%20-%202025-05-29T154329.041-p-500.webp"
+    "/background.png",
+    "/background.png",
+    "/background.png",
+    "/background.png"
   ];
 
   return (
     <footer
       className="relative text-white overflow-hidden py-12"
       style={{
-        background: "linear-gradient(135deg, #342885 0%, #4851CC 30%, #18CBFF 60%, #2DECBE 100%)",
+        background: "linear-gradient(135deg, #342885 0%, #4851CC 30%, #2d7d96ff 60%, #2a8d76ff 100%)",
       }}
     >
       {/* Soft top border to separate from above section */}
@@ -28,7 +28,7 @@ const FooterCTA = () => {
                 key={i}
                 src={src.trim()}
                 alt={`carousel-left-${col}-${i}`}
-                className="rounded-lg shadow-lg w-56 border border-white/20"
+                className="rounded-lg shadow-lg w-56"
               />
             ))}
           </div>
@@ -44,7 +44,7 @@ const FooterCTA = () => {
                 key={i}
                 src={src.trim()}
                 alt={`carousel-right-${col}-${i}`}
-                className="rounded-lg shadow-lg w-56 border border-white/20"
+                className="rounded-lg shadow-lg w-56"
               />
             ))}
           </div>
@@ -71,13 +71,13 @@ const FooterCTA = () => {
 
         {/* Footer Bottom */}
         <p className="text-white/60 mt-6 text-xs">
-          Designed by Quantum Quest Insights. Powered by React.
+          Designed by Quantum Quest Insights.
         </p>
-        <div className="flex justify-center space-x-4 text-white/50 mt-2 text-xs">
+        {/* <div className="flex justify-center space-x-4 text-white/50 mt-2 text-xs">
           <a href="#" className="hover:text-white/90 transition-colors">License</a>
           <span>|</span>
           <a href="#" className="hover:text-white/90 transition-colors">Changelog</a>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
