@@ -1,5 +1,4 @@
 import React from 'react';
-import InnerPagesSection from './InnerPagesSection';
 
 const CMSPagesSection = () => {
 
@@ -7,33 +6,33 @@ const CMSPagesSection = () => {
     {
       title: " Vendor and Client Engagement",
       imageUrl:
-        "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683949477d96ecf045ba517b_Mask%20group%20-%202025-05-30T112752.952-p-800.webp",
+        "https://images.unsplash.com/photo-1714974528737-3e6c7e4d11af?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1332",
     },
     {
       title: " Data Collection",
       imageUrl:
-        "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683833863fee3ce9f9851348_Mask%20group%20-%202025-05-29T154409.668-p-500.webp",
+        "https://images.unsplash.com/photo-1529078155058-5d716f45d604?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1169",
     },
 
     {
       title: "Data Validation and Cross Verification",
       imageUrl:
-        "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/68394947972e2c854533545d_Mask%20group%20-%202025-05-30T112810.717-p-500.webp",
+        "https://images.unsplash.com/photo-1640158615573-cd28feb1bf4e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
     },
     {
       title: "Market & Competitive Analysis",
       imageUrl:
-        "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683834317d69273f267164f9_Mask%20group%20-%202025-05-29T154645.600-p-500.webp",
+        "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1106",
     },
     {
       title: "Vendor Positioning with Quantum Scope",
       imageUrl:
-        "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683834312a74c48a373323e6_Mask%20group%20-%202025-05-29T154653.098-p-500.webp",
+        "https://images.unsplash.com/photo-1613759612065-d5971d32ca49?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1150",
     },
     {
       title: "Insights and Advisory",
       imageUrl:
-        "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/68383431a825a392dcf32514_Mask%20group%20-%202025-05-29T154705.026-p-500.webp",
+        "https://images.unsplash.com/photo-1518888154325-928734ae11b0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074",
     },
   ];
 
@@ -68,7 +67,7 @@ const CMSPagesSection = () => {
           {/* 404 Card */}
           <div className="group relative rounded-xl overflow-hidden border border-white/20 shadow-xl bg-white/10 backdrop-blur-sm transition-all duration-500 transform hover:scale-105">
             <img
-              src="https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683835210580b9f836081df7_Mask%20group%20-%202025-05-29T155025.490-p-500.webp"
+              src="https://images.unsplash.com/photo-1605902394069-ff2ae2430e62?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1331"
               alt="404 Page"
               className="w-full h-auto object-cover"
             />
@@ -82,7 +81,7 @@ const CMSPagesSection = () => {
           <div className="group relative rounded-xl overflow-hidden border border-white/20 shadow-xl bg-white/10 backdrop-blur-sm transition-all duration-500 transform hover:scale-105
 ">
             <img
-              src="https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/6838352125db4c83932ae6de_Mask%20group%20-%202025-05-29T155035.244-p-500.webp"
+              src="https://images.unsplash.com/photo-1728300250509-f7b954491905?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1182"
               alt="Password Protected"
               className="w-full h-auto object-cover"
             />
@@ -96,7 +95,7 @@ const CMSPagesSection = () => {
           <div className="group relative rounded-xl overflow-hidden border border-white/20 shadow-xl bg-white/10 backdrop-blur-sm transition-all duration-500 transform hover:scale-105
 ">
             <img
-              src="https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/6838399eb4a36fa0a017ffb9_Mask%20group%20-%202025-05-29T161003.965-p-500.webp"
+              src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
               alt="Sign Up"
               className="w-full h-auto object-cover"
             />
@@ -110,7 +109,7 @@ const CMSPagesSection = () => {
           <div className="group relative rounded-xl overflow-hidden border border-white/20 shadow-xl bg-white/10 backdrop-blur-sm transition-all duration-500 transform hover:scale-105
 ">
             <img
-              src="https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/6838399d6db6760245e027a7_Mask%20group%20-%202025-05-29T160957.885-p-500.webp"
+              src="https://plus.unsplash.com/premium_photo-1723914142569-4eab32fe384a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1098"
               alt="Sign In"
               className="w-full h-auto object-cover"
             />

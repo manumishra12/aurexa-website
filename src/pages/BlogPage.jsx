@@ -10,7 +10,7 @@ const BlogPage = () => {
       category: "Market Intelligence",
       title: "The Future of AI in Enterprise Decision-Making",
       excerpt: "How artificial intelligence is transforming strategic planning and competitive analysis across global industries.",
-      image: "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683949073075df68239088e7_Mask%20group%20-%202025-05-30T112734.836-p-500.webp",
+      image: "https://images.unsplash.com/photo-1616156027751-fc9a850fdc9b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070",
       date: "June 12, 2025",
     },
     {
@@ -18,7 +18,7 @@ const BlogPage = () => {
       category: "Technology Trends",
       title: "Edge Computing: Reshaping Data Strategy in 2025",
       excerpt: "Exploring the rise of edge technologies and their impact on latency, security, and real-time analytics.",
-      image: "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683949063ea4d58c120773ee_Mask%20group%20-%202025-05-30T112745.416-p-500.webp",
+      image: "https://plus.unsplash.com/premium_photo-1733158477861-62832089e440?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1052",
       date: "June 5, 2025",
     },
     {
@@ -26,7 +26,7 @@ const BlogPage = () => {
       category: "Strategic Advisory",
       title: "Building Resilient IT Architectures for Scale",
       excerpt: "Key principles for designing future-proof infrastructure that supports growth and innovation.",
-      image: "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/68394907e834ceab8b38c8a3_Mask%20group%20-%202025-05-30T112740.334-p-500.webp",
+      image: "https://plus.unsplash.com/premium_photo-1661904022671-b9d88de2849f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171",
       date: "May 28, 2025",
     },
     {
@@ -34,7 +34,7 @@ const BlogPage = () => {
       category: "Data & Analytics",
       title: "From Insights to Action: Closing the Analytics Gap",
       excerpt: "Why most organizations fail to act on data—and how to turn insights into measurable outcomes.",
-      image: "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683834b55f285b0f3415942a_Mask%20group%20-%202025-05-29T154919.628-p-500.webp",
+      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1251",
       date: "May 20, 2025",
     },
     {
@@ -42,7 +42,7 @@ const BlogPage = () => {
       category: "Cybersecurity",
       title: "Next-Gen Threat Intelligence for Financial Services",
       excerpt: "How RegTech and AI are converging to protect critical financial infrastructure.",
-      image: "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683834b563e111481691c621_Mask%20group%20-%202025-05-29T154908.689-p-500.webp",
+      image: "https://images.unsplash.com/photo-1483817101829-339b08e8d83f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1104",
       date: "May 14, 2025",
     },
     {
@@ -50,7 +50,7 @@ const BlogPage = () => {
       category: "Sustainability",
       title: "Green Tech: The New Frontier of Competitive Advantage",
       excerpt: "How sustainable innovation is driving market differentiation and investor confidence.",
-      image: "https://cdn.prod.website-files.com/67e1033cbc2a3f92a23aeb87/683835210580b9f836081df7_Mask%20group%20-%202025-05-29T155025.490-p-500.webp",
+      image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1313",
       date: "May 8, 2025",
     },
   ];
