@@ -70,22 +70,22 @@ const QuantumMarketIntel = () => {
             {[
               {
                 title: "Market Share",
-                img: "/quantum_intel_2.png", // 👈 Local image
+                img: "/quantum_intel_1.png", 
                 desc: "Breakdown of market share by vendor"
               },
               {
                 title: "Industry Share",
-                img: "/quantum_intel_3.png", // 👈 Local image
+                img: "/quantum_intel_2.png", 
                 desc: "Distribution across industries like BFSI, Healthcare, Tech"
               },
               {
                 title: "Regional Share",
-                img: "/quantum_intel_4.png", // 👈 Local image
+                img: "/quantum_intel_3.png", 
                 desc: "Performance across regions: APAC, EMEA, LATAM"
               },
               {
                 title: "Customer Segment",
-                img: "/quantum_intel_1.png", // 👈 Reuse or replace as needed
+                img: "/quantum_intel_4.png", 
                 desc: "Segmentation by Large, Medium, Small customers"
               }
             ].map((item, i) => (

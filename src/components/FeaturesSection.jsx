@@ -72,7 +72,7 @@ const FeaturesSection = () => {
         </div>
 
         {/* Figma File */}
-        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 flex flex-col sm:flex-row items-center justify-between gap-6">
+        {/* <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-4">
             <div className="w-14 h-14 rounded-xl bg-white/20 flex items-center justify-center">
               <img
@@ -94,7 +94,7 @@ const FeaturesSection = () => {
               Request For Figma File
             </button>
           </Link>
-        </div>
+        </div> */}
 
         {/* Unique Home Pages */}
         <div className="text-center mb-14 mt-20">
