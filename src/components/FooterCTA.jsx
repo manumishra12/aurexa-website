@@ -1,5 +1,6 @@
 // src/components/FooterCTA.jsx
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const FooterCTA = () => {
   const carouselImages = [
@@ -54,8 +55,8 @@ const FooterCTA = () => {
       {/* Main Content - Compact & High Contrast */}
       <div className="max-w-3xl mx-auto px-6 lg:px-12 py-6 text-center relative z-10">
         {/* Logo */}
-        <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-lg mx-auto mb-3 flex items-center justify-center">
-          <img src="/logo-rb.png" alt="A" className="h-8 w-auto" />
+        <div className="flex items-center justify-center">
+          <img src="/logo-bg.png" alt="Quantum Quest Insights" className="h-16 w-auto" />
         </div>
         <p className="font-semibold text-base text-white/90 mb-4">Quantum Quest Insights</p>
 
@@ -65,9 +66,12 @@ const FooterCTA = () => {
           Please Get In Touch!
         </h2>
 
-        <button className="bg-white text-indigo-900 hover:bg-gray-100 font-semibold rounded-full px-6 py-2.5 text-sm transition-all duration-300 shadow-md hover:shadow-lg">
-          Checkout Our Services
-        </button>
+        <Link to="/services" className="inline-block mb-6">
+          <button className="bg-white text-indigo-900 hover:bg-gray-100 font-semibold rounded-full px-6 py-2.5 text-sm transition-all duration-300 shadow-md hover:shadow-lg">
+            Checkout Our Services
+          </button>
+        </Link>
+
 
         {/* Footer Bottom */}
         <p className="text-white/60 mt-6 text-xs">

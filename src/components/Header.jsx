@@ -8,7 +8,7 @@ const Header = () => {
       <Navigation />
 
       {/* Centered decorative background image */}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0 opacity-25 pointer-events-none">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0 opacity-30 pointer-events-none">
         <img
           src="/background.png"
           alt="Background"
@@ -55,11 +55,11 @@ const Header = () => {
           <div className="relative rounded-2xl p-8 border border-white/20 shadow-xl bg-white/10 backdrop-blur-sm w-full md:w-[32%] hover:scale-[1.02] transition-transform duration-300">
             <div className="text-center mb-6">
               <span className="text-orange-400 text-xs font-medium tracking-wider">MISSION</span>
-              <h2 className="text-xl lg:text-2xl font-bold mt-3 mb-4 leading-snug text-white">
+              {/* <h2 className="text-xl lg:text-2xl font-bold mt-3 mb-4 leading-snug text-white">
                 AI Dashboard <br />
                 <span className="text-gray-300">Insights & Analytics</span>
-              </h2>
-              <p className="text-slate-300 text-sm max-w-sm mx-auto mb-6">
+              </h2> */}
+              <p className="text-slate-100 text-base font-bold max-w-sm mx-auto mb-6">
                 To provide transformative insights and market dynamics, empowering global vendors/stakeholders with strategic solutions to grow, compete, and prosper.
               </p>
             </div>
@@ -76,11 +76,11 @@ const Header = () => {
           <div className="relative rounded-2xl p-8 border border-white/20 shadow-xl bg-white/10 backdrop-blur-sm w-full md:w-[32%] hover:scale-[1.02] transition-transform duration-300">
             <div className="text-center mb-6">
               <span className="text-orange-400 text-xs font-medium tracking-wider">VISION</span>
-              <h2 className="text-xl lg:text-2xl font-bold mt-3 mb-4 leading-snug text-white">
+              {/* <h2 className="text-xl lg:text-2xl font-bold mt-3 mb-4 leading-snug text-white">
                 Workflow Automation <br />
                 <span className="text-gray-300">Boost Productivity</span>
-              </h2>
-              <p className="text-slate-300 text-sm max-w-sm mx-auto mb-6">
+              </h2> */}
+              <p className="text-slate-100 text-base font-bold max-w-sm mx-auto mb-6">
                 We envision a future to pioneer in research market upholding a sense of trust and reliability amongst global ICT leaders.
               </p>
             </div>
@@ -97,11 +97,11 @@ const Header = () => {
           <div className="relative rounded-2xl p-8 border border-white/20 shadow-xl bg-white/10 backdrop-blur-sm w-full md:w-[32%] hover:scale-[1.02] transition-transform duration-300">
             <div className="text-center mb-6">
               <span className="text-orange-400 text-xs font-medium tracking-wider">OBJECTIVE</span>
-              <h2 className="text-xl lg:text-2xl font-bold mt-3 mb-4 leading-snug text-white">
+              {/* <h2 className="text-xl lg:text-2xl font-bold mt-3 mb-4 leading-snug text-white">
                 Cloud Native <br />
                 <span className="text-gray-300">Deployments</span>
-              </h2>
-              <p className="text-slate-300 text-sm max-w-sm mx-auto mb-6">
+              </h2> */}
+              <p className="text-slate-100 text-base font-bold max-w-sm mx-auto mb-6">
                 Our key objectives include pushing the boundaries of research, expanding our global reach, and fostering collaboration with leading experts.
               </p>
             </div>

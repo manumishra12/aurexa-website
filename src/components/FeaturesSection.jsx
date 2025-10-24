@@ -1,11 +1,12 @@
 // src/components/FeaturesSection.jsx
 import React from 'react';
+import { Link } from 'react-router-dom'; // 👈 Add this
 
 const FeaturesSection = () => {
   return (
     <section
       className="text-white py-20"
-      style={{ background: "linear-gradient(135deg, #342885 0%, #4851CC 30%, #2686a3b7 60%, #32ba9ab8 100%)" }}
+      style={{ background: "linear-gradient(135deg, #342885 0%, #4851CC 30%, #18CBFF 60%, #2DECBE 100%)" }}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Heading + Quote */}
@@ -37,11 +38,11 @@ const FeaturesSection = () => {
                 <h3 className="text-5xl font-bold mb-2 text-white">10+</h3>
                 <p className="text-slate-300 text-lg">Clients</p>
               </div>
-              <div className="w-[200px] h-60 rounded-lg overflow-hidden border border-white/20">
+              <div className="w-[200px] h-60 rounded-lg overflow-hidden border border-white/20 bg-white/5 flex items-center justify-center p-2">
                 <img
-                  src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=600&h=300&q=80"
+                  src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=1200&q=80"
                   alt="Feature Preview"
-                  className="w-full h-full object-cover"
+                  className="max-h-full w-auto object-contain rounded"
                 />
               </div>
             </div>
@@ -56,11 +57,11 @@ const FeaturesSection = () => {
                 <h3 className="text-5xl font-bold mb-2 text-white">20+</h3>
                 <p className="text-slate-300 text-lg">Case Studies</p>
               </div>
-              <div className="w-[200px] h-60 rounded-lg overflow-hidden border border-white/20">
+              <div className="w-[200px] h-60 rounded-lg overflow-hidden border border-white/20 bg-white/5 flex items-center justify-center p-2">
                 <img
-                  src="https://images.unsplash.com/photo-1529119513315-c7c361862fc7?auto=format&fit=crop&w=600&h=300&q=80"
+                  src="https://images.unsplash.com/photo-1529119513315-c7c361862fc7?auto=format&fit=crop&w=1200&q=80"
                   alt="Feature Preview"
-                  className="w-full h-full object-cover"
+                  className="max-h-full w-auto object-contain rounded"
                 />
               </div>
             </div>
@@ -88,15 +89,17 @@ const FeaturesSection = () => {
               </p>
             </div>
           </div>
-          <button className="px-6 py-3 rounded-xl text-indigo-900 font-semibold bg-white hover:bg-gray-100 shadow transition">
-            Request For Figma File
-          </button>
+          <Link to="/contact">
+            <button className="px-6 py-3 rounded-xl text-indigo-900 font-semibold bg-white hover:bg-gray-100 shadow transition">
+              Request For Figma File
+            </button>
+          </Link>
         </div>
 
         {/* Unique Home Pages */}
         <div className="text-center mb-14 mt-20">
           <h3 className="text-4xl lg:text-5xl font-bold tracking-tight">
-            Our <span className="text-gray-300">Solutions</span>
+            Our <span className="text-gray-300">Offerings</span>
           </h3>
         </div>
 
@@ -106,37 +109,43 @@ const FeaturesSection = () => {
             {
               title: "Quantum Scope",
               img: "/quantum_scope.png",
-              desc: "Enables competitive positioning of vendors by analyzing technology capabilities and market share."
+              desc: "Enables competitive positioning of vendors by analyzing technology capabilities and market share.",
+              path: "/quantum-scope"
             },
             {
               title: "Quantum Market Intel",
               img: "https://images.unsplash.com/photo-1603975711481-18b7aaca4caa?auto=format&fit=crop&w=600&h=300&q=85",
-              desc: "Offers in-depth analysis of market share, industry trends, customer segments, and regional dynamics."
+              desc: "Offers in-depth analysis of market share, industry trends, customer segments, and regional dynamics.",
+              path: "/quantum-market-intel"
             },
             {
               title: "Quantum Amplify",
               img: "https://plus.unsplash.com/premium_photo-1714229505922-0ab8148bc2bf?auto=format&fit=crop&w=600&h=300&q=85",
-              desc: "Provides strategic marketing support to help vendors strengthen their market presence and maximize impact."
+              desc: "Provides strategic marketing support to help vendors strengthen their market presence and maximize impact.",
+              path: "/quantum-amplify"
             }
           ].map((item, i) => (
-            <div
+            <Link
               key={i}
-              className="bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 hover:shadow-xl transition flex flex-col"
+              to={item.path}
+              className="bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 hover:shadow-xl transition flex flex-col group"
             >
               <div className="h-48 overflow-hidden">
-                <img
-                  src={item.img}
-                  alt={item.title}
-                  className="w-full h-full object-cover"
-                />
+                <div className="w-full h-full flex items-center justify-center bg-white/3">
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    className="max-h-full w-auto object-contain"
+                  />
+                </div>
               </div>
               <div className="p-4 flex flex-col flex-grow justify-between">
-                <h3 className="text-center text-white font-semibold mb-2">{item.title}</h3>
+                <h3 className="text-center text-white font-semibold mb-2 group-hover:text-cyan-300 transition-colors">{item.title}</h3>
                 <p className="text-center text-slate-300 text-sm leading-relaxed">
                   {item.desc}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
@@ -146,32 +155,37 @@ const FeaturesSection = () => {
             {
               title: "Quantum Consulting",
               img: "https://images.unsplash.com/photo-1590649681928-4b179f773bd5?auto=format&fit=crop&w=600&h=300&q=85",
-              desc: "Provides expert advisory services to organizations, helping them optimize technology strategies, streamline operations, and unlock new growth opportunities through tailored research and consulting solutions."
+              desc: "Provides expert advisory services to organizations, helping them optimize technology strategies, streamline operations, and unlock new growth opportunities through tailored research and consulting solutions.",
+              path: "/quantum-consulting"
             },
             {
               title: "Quantum 360",
               img: "/quantum_360.png",
-              desc: "Delivers comprehensive market insights, including competitive advantage, product intelligence, and customer understanding."
+              desc: "Delivers comprehensive market insights, including competitive advantage, product intelligence, and customer understanding.",
+              path: "/quantum-360"
             }
           ].map((item, i) => (
-            <div
+            <Link
               key={i}
-              className="bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 hover:shadow-xl transition flex flex-col w-full max-w-[350px]"
+              to={item.path}
+              className="bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 hover:shadow-xl transition flex flex-col w-full max-w-[350px] group"
             >
               <div className="h-48 overflow-hidden">
-                <img
-                  src={item.img}
-                  alt={item.title}
-                  className="w-full h-full object-cover"
-                />
+                <div className="w-full h-full flex items-center justify-center bg-white/3">
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    className="max-h-full w-auto object-contain"
+                  />
+                </div>
               </div>
               <div className="p-4 flex flex-col flex-grow justify-between">
-                <h3 className="text-center text-white font-semibold mb-2">{item.title}</h3>
+                <h3 className="text-center text-white font-semibold mb-2 group-hover:text-cyan-300 transition-colors">{item.title}</h3>
                 <p className="text-center text-slate-300 text-sm leading-relaxed">
                   {item.desc}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

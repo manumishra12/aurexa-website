@@ -23,23 +23,21 @@ const Navigation = () => {
         // Close mobile menu if open
         setIsMobileMenuOpen(false);
       }
-    }
+    } 
   };
 
   return (
     <nav className="relative z-20 flex items-center justify-between px-6 lg:px-14 py-4 mt-6">
       {/* Logo - links to home */}
-      <Link to="/" className="flex items-center space-x-2">
-        <div
-          className="w-9 h-9 rounded-lg flex items-center justify-center"
-        //   style={{
-        //     background:
-        //       "linear-gradient(135deg, rgba(9,14,23,1), rgba(28,26,53,1))",
-        //   }}
-        >
-          <img src="/blue_logo_1.png" alt="A" className="h-6 w-auto" />
+      <Link to="/" className="flex items-center space-x-3">
+        <div className="flex items-center justify-center">
+          <img src="/logo-bg.png" alt="Quantum Quest Insights" className="h-16 w-auto" />
         </div>
-        <span className="text-xl font-bold text-white">Quantum Quest Insights</span>
+        <div className="flex flex-col">
+          <span className="text-lg font-bold text-white">QUANTUM</span>
+          <span className="text-xl font-bold text-white -mt-1">QUEST INSIGHTS</span>
+          <span className="text-[10px] text-gray-300 tracking-widest mt-0.5">UNVEILING INSIGHTS, UNLOCKING GROWTH</span>
+        </div>
       </Link>
 
       {/* Desktop Navigation */}
