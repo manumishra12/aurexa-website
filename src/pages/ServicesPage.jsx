@@ -23,7 +23,7 @@ const ServicesPage = () => {
     {
       name: "Data Analytics & AI Solutions",
       desc: "Driving innovation through predictive analytics and machine learning.",
-      img: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
+      img: "/data_analytics.jpeg",
     },
     {
       name: "IT Architecture & Strategic Planning",
@@ -33,12 +33,12 @@ const ServicesPage = () => {
     {
       name: "Enterprise Risk & Compliance Management",
       desc: "Mitigating risk with proactive compliance and regulatory strategies.",
-      img: "https://images.unsplash.com/photo-1605902711622-cfb43c4437b5?auto=format&fit=crop&w=800&q=80",
+      img: "/enterprise_data_strategy.jpeg",
     },
     {
       name: "Business Process Optimization & Automation",
       desc: "Simplifying operations with workflow automation and intelligent systems.",
-      img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
+      img: "/bpm.jpeg",
     },
     {
       name: "Human Capital & Workforce Technology",
@@ -68,7 +68,7 @@ const ServicesPage = () => {
     {
       name: "Unified Communication & Collaboration Platforms",
       desc: "Bringing teams together through intelligent communication tools.",
-      img: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=800&q=80",
+      img: "/unified_communication.jpeg",
     },
     {
       name: "RegTech & Compliance Solutions",
@@ -78,12 +78,12 @@ const ServicesPage = () => {
     {
       name: "Digital Procurement & Supply Solutions",
       desc: "Optimizing procurement cycles with smart digital integrations.",
-      img: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80",
+      img: "/digital_procurement.jpeg",
     },
     {
       name: "Customer Experience & Marketing Technologies",
       desc: "Delivering exceptional digital journeys through AI-driven engagement.",
-      img: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=800&q=80",
+      img: "/customer_exp.jpeg",
     },
     {
       name: "Cybersecurity & Data Protection",
@@ -93,7 +93,7 @@ const ServicesPage = () => {
     {
       name: "Digital Commerce & Retail Innovation",
       desc: "Redefining shopping experiences through next-gen retail tech.",
-      img: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80",
+      img: "/digital_commerce.jpeg",
     },
   ];
 

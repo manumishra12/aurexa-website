@@ -42,10 +42,10 @@ const QuantumScope = () => {
                                 <h3 className="text-xl font-semibold text-white mb-4">The Framework</h3>
                                 <div className="space-y-4">
                                     <div>
-                                        <strong className="text-cyan-400">X-Axis (Tech Innovation):</strong> Demonstrates how technological advancements unfold over time, showcasing various levels of development and their impact on industries.
+                                        <strong className="text-orange-900">X-Axis (Tech Adoption):</strong> Demonstrates how technological advancements unfold over time, showcasing various levels of development and their impact on industries.
                                     </div>
                                     <div>
-                                        <strong className="text-cyan-400">Y-Axis (Market Share):</strong> Illustrates the proportion of market occupied by different products or firms, highlighting competitive landscape dynamics in various sectors.
+                                        <strong className="text-orange-900">Y-Axis (Market Impact):</strong> Demonstrates the proportion of market occupied by different products or companies, customer experience and customer support, highlighting competitive landscape dynamics in specific technology.
                                     </div>
                                 </div>
                             </div>

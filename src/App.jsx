@@ -18,13 +18,21 @@ import QuantumAmplify from './pages/QuantumAmplify';
 import QuantumConsulting from './pages/QuantumConsulting';
 import Quantum360 from './pages/Quantum360';
 
+// Import Research Methodology pages
+import ResearchStep1 from './pages/ResearchStep1';
+import ResearchStep2 from './pages/ResearchStep2';
+import ResearchStep3 from './pages/ResearchStep3';
+import ResearchStep4 from './pages/ResearchStep4';
+import ResearchStep5 from './pages/ResearchStep5';
+import ResearchStep6 from './pages/ResearchStep6';
+
 const App = () => {
   return (
     <Router>
       <div
         className="min-h-screen overflow-x-hidden"
         style={{
-          background: "linear-gradient(135deg, #342885 0%, #4851CC 30%, #1a97bdff 60%, #1ec49dff 100%)",
+          background: "linear-gradient(135deg, #342885 0%, #4851CC 30%, #2690b1ff 60%, #3bb297ff 100%)",
         }}
       >
         <Routes>
@@ -45,12 +53,20 @@ const App = () => {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
 
-          {/* New Offering Pages */}
+          {/* Offering Pages */}
           <Route path="/quantum-scope" element={<QuantumScope />} />
           <Route path="/quantum-market-intel" element={<QuantumMarketIntel />} />
           <Route path="/quantum-amplify" element={<QuantumAmplify />} />
           <Route path="/quantum-consulting" element={<QuantumConsulting />} />
           <Route path="/quantum-360" element={<Quantum360 />} />
+
+          {/* Research Methodology Pages */}
+          <Route path="/research-step-1" element={<ResearchStep1 />} />
+          <Route path="/research-step-2" element={<ResearchStep2 />} />
+          <Route path="/research-step-3" element={<ResearchStep3 />} />
+          <Route path="/research-step-4" element={<ResearchStep4 />} />
+          <Route path="/research-step-5" element={<ResearchStep5 />} />
+          <Route path="/research-step-6" element={<ResearchStep6 />} />
         </Routes>
       </div>
     </Router>
