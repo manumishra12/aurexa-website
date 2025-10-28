@@ -62,13 +62,13 @@ const FooterCTA = () => {
 
         {/* CTA Content */}
         <h2 className="text-xl lg:text-2xl font-bold text-white/95 mb-5 max-w-2xl mx-auto leading-tight">
-          Want Us To Customize Quantum Quest Insights?<br />
+          Want us to boost your company growth?<br />
           Please Get In Touch!
         </h2>
 
-        <Link to="/services" className="inline-block mb-6">
+        <Link to="/contact" className="inline-block mb-6">
           <button className="bg-white text-indigo-900 hover:bg-gray-100 font-semibold rounded-full px-6 py-2.5 text-sm transition-all duration-300 shadow-md hover:shadow-lg">
-            Checkout Our Services
+            Please get in touch
           </button>
         </Link>
 

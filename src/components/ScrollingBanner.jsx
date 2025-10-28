@@ -2,8 +2,8 @@ import React from 'react';
 
 const ScrollingBanner = () => {
   const features = [
-    'AI Automation', 'Data Driven AI', 'Predictive AI', 'Smart SaaS', 
-    'AI Security', 'TrustIn AI', 'Solutions', 'Machine Learning'
+    'DevOps Automation', 'DevOps Automation', 'DevOps Automation', 'DevOps Automation', 
+    'DevOps Automation', 'DevOps Automation', 'DevOps Automation', 'DevOps Automation'
   ];
 
   return (
