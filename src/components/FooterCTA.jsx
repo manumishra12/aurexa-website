@@ -72,16 +72,10 @@ const FooterCTA = () => {
           </button>
         </Link>
 
-
         {/* Footer Bottom */}
         <p className="text-white/60 mt-6 text-xs">
           Designed by Quantum Quest Insights.
         </p>
-        {/* <div className="flex justify-center space-x-4 text-white/50 mt-2 text-xs">
-          <a href="#" className="hover:text-white/90 transition-colors">License</a>
-          <span>|</span>
-          <a href="#" className="hover:text-white/90 transition-colors">Changelog</a>
-        </div> */}
       </div>
     </footer>
   );
