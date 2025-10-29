@@ -1,9 +1,11 @@
-// src/pages/ServicesPage.jsx
-import React from "react";
+// src/pages/WhoWeServePage.jsx
+import React, { useState } from "react";
 import Navigation from "../components/Navigation";
 import Footer from "../components/FooterCTA";
 
-const ServicesPage = () => {
+const WhoWeServePage = () => {
+  const [activeTab, setActiveTab] = useState("industry");
+
   const services = [
     {
       name: "Software Development & Implementation",
@@ -28,7 +30,7 @@ const ServicesPage = () => {
     {
       name: "IT Architecture & Strategic Planning",
       desc: "Designing future-ready digital frameworks for sustainable growth.",
-      img: "https://images.unsplash.com/photo-1562601553-b67e9e26f364?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074",
+      img: "https://images.unsplash.com/photo-1562601553-b67e9e26f364?auto=format&fit=crop&w=800&q=80",
     },
     {
       name: "Enterprise Risk & Compliance Management",
@@ -48,12 +50,12 @@ const ServicesPage = () => {
     {
       name: "Industry 4.0 & Engineering Tech",
       desc: "Revolutionizing industries through smart manufacturing and automation.",
-      img: "https://images.unsplash.com/photo-1716191300020-b52dec5b70a8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+      img: "https://images.unsplash.com/photo-1716191300020-b52dec5b70a8?auto=format&fit=crop&w=800&q=80",
     },
     {
       name: "Financial Services & Digital Banking",
       desc: "Modernizing finance through secure and seamless digital solutions.",
-      img: "https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+      img: "https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?auto=format&fit=crop&w=800&q=80",
     },
     {
       name: "Green Tech & Sustainable Solutions",
@@ -73,7 +75,7 @@ const ServicesPage = () => {
     {
       name: "RegTech & Compliance Solutions",
       desc: "Enhancing transparency and control with advanced regulatory tech.",
-      img: "https://plus.unsplash.com/premium_photo-1661696766614-49a79483876c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+      img: "https://plus.unsplash.com/premium_photo-1661696766614-49a79483876c?auto=format&fit=crop&w=800&q=80",
     },
     {
       name: "Digital Procurement & Supply Solutions",
@@ -97,59 +99,158 @@ const ServicesPage = () => {
     },
   ];
 
+  const geographies = [
+    { name: "North America", desc: "Deep market intelligence across US & Canada." },
+    { name: "Europe", desc: "Expertise in GDPR, fintech, and industrial digitalization." },
+    { name: "Latin America", desc: "Rapidly growing tech adoption across Brazil & Mexico." },
+    { name: "Middle East", desc: "Smart city and energy digital transformation expertise." },
+    { name: "Asia Pacific", desc: "AI and robotics leadership across China, Japan, Korea." },
+    { name: "South Asia", desc: "Mobile-first SaaS growth, including India & Bangladesh." },
+    { name: "Africa", desc: "Digital leapfrogging, fintech innovation & infra growth." },
+  ];
+
+  const industryTypes = [
+    { type: "SMB", desc: "Fast deployment, cost-efficient, scalable growth." },
+    { type: "Large", desc: "Structured digital transformation and integration." },
+    { type: "Enterprise", desc: "Global consistency, governance & long-term value." },
+  ];
+
+  const changeMakers = [
+    {
+      role: "Strategic",
+      titles: "CEO, CMO, CTO, CFO",
+      value: "Driving transformation and market expansion.",
+    },
+    {
+      role: "Product",
+      titles: "VP Product, VP Architect, VP Product Marketing",
+      value: "Building winning products with market insights.",
+    },
+    {
+      role: "Marketing",
+      titles: "CMO, VP Sales",
+      value: "Revenue growth through data-led customer engagement.",
+    },
+    {
+      role: "Finance | Compliance | Governance",
+      titles: "CFO, CCO",
+      value: "Ensuring financial health, compliance & ROI.",
+    },
+  ];
+
   return (
     <div
       className="min-h-screen flex flex-col text-white"
       style={{
         background:
-          "linear-gradient(135deg, #342885 0%, #4851CC 30%, #2686a3b7 60%, #32ba9ab8 100%)",
+          "linear-gradient(135deg, #342885 0%, #4851CC 30%, #28778fff 60%, #2e9c82ff 100%)",
       }}
     >
       <Navigation />
 
-      <main className="flex-grow py-20 px-6 lg:px-12">
-        <div className="max-w-7xl mx-auto">
-          {/* Header Section */}
-          <div className="text-center mb-16">
-            <span className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-xs font-bold tracking-wider mb-4">
-              OUR EXPERTISE
-            </span>
-            <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-              Who We Serve
-            </h1>
-            <p className="text-xl text-slate-200 max-w-2xl mx-auto">
-              Comprehensive solutions designed to empower your organization with
-              strategic insights and technological excellence.
-            </p>
-          </div>
+      <main className="flex-grow py-20 px-6 lg:px-12 max-w-7xl mx-auto">
+        {/* ----------- Header ---------- */}
+        <div className="text-center mb-16">
+          <span className="inline-block bg-gradient-to-r from-orange-500 to-orange-500 px-4 py-1 rounded-full text-xs font-bold">
+            OUR EXPERTISE
+          </span>
+          <h1 className="text-4xl font-bold mt-4">WHO WE SERVE</h1>
+          <p className="text-lg text-slate-200 max-w-2xl mx-auto">
+            Comprehensive solutions designed to empower your organization with strategic insights and technological excellence.
+          </p>
+        </div>
 
-          {/* Services Grid */}
-          <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {services.map((service, index) => (
-                <div
-                  key={index}
-                  className="group relative rounded-xl overflow-hidden border border-white/20 bg-white/5 shadow-lg hover:shadow-cyan-400/30 transition-all duration-500 transform hover:scale-105"
-                >
-                  <div className="relative h-48 overflow-hidden">
-                    <img
-                      src={service.img}
-                      alt={service.name}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                  </div>
-
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
-                    <h4 className="text-lg font-semibold text-white mb-1">
-                      {service.name}
-                    </h4>
-                    <p className="text-sm text-slate-300">{service.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+        {/* ----------- Tabs ---------- */}
+        <div className=" mb-10">
+          <div className="flex flex-wrap gap-4 justify-center">
+            {["industry", "geography", "industryType", "changeMaker"].map((tab) => (
+              <button
+                key={tab}
+                onClick={() => setActiveTab(tab)}
+                className={`px-6 py-3 rounded-full font-medium transition ${
+                  activeTab === tab
+                    ? "bg-cyan-500 text-white"
+                    : "bg-white/10 text-slate-200 hover:bg-white/20"
+                }`}
+              >
+                {tab === "industry"
+                  ? "Industry"
+                  : tab === "geography"
+                  ? "Geography"
+                  : tab === "industryType"
+                  ? "Industry Type"
+                  : "Change Makers"}
+              </button>
+            ))}
           </div>
+        </div>
+
+        {/* ----------- Tab Content ---------- */}
+        <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
+
+          {/* ✅ INDUSTRY TAB — SHOW SERVICES WITH IMAGES */}
+          {activeTab === "industry" && (
+            <>
+              <h2 className="text-2xl font-bold mb-6">Our Services Across Industries</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {services.map((service, i) => (
+                  <div key={i} className="rounded-xl overflow-hidden bg-white/5 border border-white/10 hover:shadow-xl hover:scale-105 transition">
+                    <img src={service.img} className="h-48 w-full object-cover" />
+                    <div className="p-6">
+                      <h4 className="text-lg font-semibold mb-2 text-white">{service.name}</h4>
+                      <p className="text-sm text-slate-300">{service.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+
+          {/* ✅ GEOGRAPHY TAB */}
+          {activeTab === "geography" && (
+            <>
+              <h2 className="text-2xl font-bold mb-6">Global Reach. Local Expertise.</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {geographies.map((geo, i) => (
+                  <div key={i} className="bg-white/5 rounded-xl p-6 border border-white/20 hover:scale-105 transition">
+                    <h3 className="text-xl font-semibold text-white">{geo.name}</h3>
+                    <p className="mt-2 text-slate-300 text-sm">{geo.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+
+          {/* ✅ INDUSTRY TYPE TAB */}
+          {activeTab === "industryType" && (
+            <>
+              <h2 className="text-2xl font-bold mb-6">Solutions for Every Organization Size</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                {industryTypes.map((size, i) => (
+                  <div key={i} className="bg-white/5 rounded-xl p-6 border border-white/20 hover:scale-105 transition">
+                    <h3 className="text-xl font-bold">{size.type}</h3>
+                    <p className="mt-2 text-slate-300">{size.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+
+          {/* ✅ CHANGE MAKERS TAB */}
+          {activeTab === "changeMaker" && (
+            <>
+              <h2 className="text-2xl font-bold mb-6">Empowering Change Makers</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                {changeMakers.map((maker, i) => (
+                  <div key={i} className="bg-white/5 rounded-xl p-6 border border-white/20 hover:scale-105 transition">
+                    <h3 className="text-xl font-bold">{maker.role}</h3>
+                    <p className="mt-2 text-slate-300 text-sm"><strong>Titles: </strong>{maker.titles}</p>
+                    <p className="mt-3 text-slate-400 text-xs"><strong>Value Delivered:</strong> {maker.value}</p>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
         </div>
       </main>
 
@@ -158,4 +259,4 @@ const ServicesPage = () => {
   );
 };
 
-export default ServicesPage;
+export default WhoWeServePage;

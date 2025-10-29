@@ -41,13 +41,15 @@ const Header = () => {
 
           <h1 className="text-3xl lg:text-5xl font-bold mb-6 leading-tight">
             Quantum Quest Insights <br />
-            IT/Research <span className="italic text-gray-200">& Advisory</span>
+            Research <span className="italic text-gray-200">& Advisory</span>
           </h1>
 
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-semibold shadow transition mb-20">
+          {/* <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-semibold shadow transition mb-20">
             Explore Demos
-          </button>
+          </button> */}
         </div>
+        <br />
+        <br />
 
         {/* Cards */}
         <div className="flex flex-col md:flex-row justify-center gap-8 mt-6 max-w-7xl mx-auto pb-16">
@@ -115,6 +117,8 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <br />
+      <br />
     </header>
   );
 };
