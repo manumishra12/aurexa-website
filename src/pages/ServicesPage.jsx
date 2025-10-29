@@ -6,32 +6,32 @@ import Footer from "../components/FooterCTA";
 
 // Simple SVG icon components (no external library needed)
 const MapPinIcon = () => (
-  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
   </svg>
 );
 
 const GlobeIcon = () => (
-  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
   </svg>
 );
 
 const TrendingUpIcon = () => (
-  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
   </svg>
 );
 
 const ZapIcon = () => (
-  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
   </svg>
 );
 
 const TargetIcon = () => (
-  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
     <circle cx="12" cy="12" r="10" strokeWidth={2} />
     <circle cx="12" cy="12" r="6" strokeWidth={2} />
     <circle cx="12" cy="12" r="2" strokeWidth={2} />
@@ -45,7 +45,7 @@ const BuildingIcon = ({ size = "w-10 h-10" }) => (
 );
 
 const ShieldIcon = () => (
-  <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
   </svg>
 );
@@ -198,17 +198,17 @@ const WhoWeServePage = () => {
     {
       type: "SMB",
       desc: "Fast deployment, cost-efficient, scalable growth.",
-      icon: <BuildingIcon size="w-10 h-10" />,
+      icon: <BuildingIcon size="w-12 h-12" />,
     },
     {
       type: "Large",
       desc: "Structured digital transformation and integration.",
-      icon: <BuildingIcon size="w-12 h-12" />,
+      icon: <BuildingIcon size="w-14 h-14" />,
     },
     {
       type: "Enterprise",
       desc: "Global consistency, governance & long-term value.",
-      icon: <BuildingIcon size="w-14 h-14" />,
+      icon: <BuildingIcon size="w-16 h-16" />,
     },
   ];
 
@@ -294,6 +294,9 @@ const WhoWeServePage = () => {
           {/*  INDUSTRY TAB — SHOW SERVICES WITH IMAGES */}
           {activeTab === "industry" && (
             <>
+              <h2 className="text-3xl font-bold mb-8 text-white">
+                Our Services Across Industries
+              </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {services.map((service, i) => (
                   <div
@@ -325,21 +328,16 @@ const WhoWeServePage = () => {
               <h2 className="text-3xl font-bold mb-8 text-white">
                 Global Reach. Local Expertise.
               </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
                 {geographies.map((geo, i) => (
                   <div
                     key={i}
-                    className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 rounded-2xl p-8 border border-white/30 hover:scale-105 hover:shadow-2xl transition-all duration-300"
+                    className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 rounded-xl p-6 border border-white/30 hover:scale-105 hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center text-center"
                   >
-                    <div className="flex items-center gap-4 mb-4">
-                      <div className="text-cyan-400">{geo.icon}</div>
-                      <h3 className="text-2xl font-bold text-white">
-                        {geo.name}
-                      </h3>
-                    </div>
-                    <p className="text-base text-slate-200 leading-relaxed">
-                      {geo.desc}
-                    </p>
+                    <div className="text-cyan-400 mb-4">{geo.icon}</div>
+                    <h3 className="text-lg font-bold text-white">
+                      {geo.name}
+                    </h3>
                   </div>
                 ))}
               </div>
@@ -356,17 +354,14 @@ const WhoWeServePage = () => {
                 {industryTypes.map((size, i) => (
                   <div
                     key={i}
-                    className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 rounded-2xl p-10 border border-white/30 hover:scale-105 hover:shadow-2xl transition-all duration-300 text-center"
+                    className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 rounded-xl p-8 border border-white/30 hover:scale-105 hover:shadow-xl transition-all duration-300 text-center flex flex-col items-center justify-center"
                   >
-                    <div className="flex justify-center mb-6 text-cyan-400">
+                    <div className="flex justify-center mb-4 text-cyan-400">
                       {size.icon}
                     </div>
-                    <h3 className="text-3xl font-bold text-white mb-4">
+                    <h3 className="text-2xl font-bold text-white">
                       {size.type}
                     </h3>
-                    <p className="text-base text-slate-200 leading-relaxed">
-                      {size.desc}
-                    </p>
                   </div>
                 ))}
               </div>
@@ -379,23 +374,23 @@ const WhoWeServePage = () => {
               <h2 className="text-3xl font-bold mb-8 text-white">
                 Empowering Change Makers
               </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {changeMakers.map((maker, i) => (
                   <div
                     key={i}
-                    className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 rounded-2xl p-8 border border-white/30 hover:scale-105 hover:shadow-2xl transition-all duration-300"
+                    className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 rounded-xl p-6 border border-white/30 hover:scale-105 hover:shadow-xl transition-all duration-300"
                   >
                     <div className="flex items-center gap-4 mb-4">
                       <div className="text-cyan-400">{maker.icon}</div>
-                      <h3 className="text-2xl font-bold text-white">
+                      <h3 className="text-xl font-bold text-white">
                         {maker.role}
                       </h3>
                     </div>
-                    <p className="text-base text-slate-200 mb-4">
+                    <p className="text-sm text-slate-200 mb-3">
                       <strong className="text-white">Titles: </strong>
                       {maker.titles}
                     </p>
-                    <p className="text-base text-slate-300">
+                    <p className="text-sm text-slate-300">
                       <strong className="text-white">Value Delivered: </strong>
                       {maker.value}
                     </p>

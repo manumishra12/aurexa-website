@@ -80,7 +80,7 @@ const Navigation = () => {
   const navItems = [
     { name: 'Home', to: '/', isExternal: false },
     { name: 'About', to: '/about', isExternal: false },
-    { name: 'Services', to: '/services', isExternal: false },
+    { name: 'Who We Serve', to: '/services', isExternal: false },
     { name: 'Blog', to: '/blog', isExternal: false },
     { name: 'Contact', to: '/contact', isExternal: false },
   ];
@@ -204,7 +204,7 @@ const Navigation = () => {
       {/* Desktop Navigation */}
       <div className="hidden lg:flex items-center space-x-8 font-medium relative">
         {navItems.map((item) => {
-          if (item.name === 'Services') {
+          if (item.name === 'Who We Serve') {
             return (
               <div
                 key={item.name}
