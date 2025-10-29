@@ -28,7 +28,7 @@ const QuantumScope = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                         <div>
                             <img
-                                src="/quantum_scope.png"
+                                src="/quantum_scope.jpeg"
                                 alt="Quantum Scope Dashboard"
                                 className="rounded-2xl shadow-xl w-full h-auto"
                             />

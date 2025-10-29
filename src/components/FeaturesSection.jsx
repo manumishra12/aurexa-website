@@ -83,7 +83,7 @@ const FeaturesSection = () => {
           {[
             {
               title: "Quantum Scope",
-              img: "/quantum_scope.png",
+              img: "/quantum_scope.jpeg",
               desc: "Enables competitive positioning of vendors by analyzing technology capabilities and market share.",
               path: "/quantum-scope"
             },
