@@ -1,5 +1,6 @@
 // src/pages/WhoWeServePage.jsx
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import Footer from "../components/FooterCTA";
 
@@ -50,7 +51,17 @@ const ShieldIcon = () => (
 );
 
 const WhoWeServePage = () => {
+  const location = useLocation();
   const [activeTab, setActiveTab] = useState("industry");
+
+  // Read URL parameters and set active tab
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const tabParam = params.get('tab');
+    if (tabParam && ['industry', 'geography', 'industryType', 'changeMaker'].includes(tabParam)) {
+      setActiveTab(tabParam);
+    }
+  }, [location]);
 
   const services = [
     {
