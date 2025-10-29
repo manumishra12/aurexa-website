@@ -255,7 +255,7 @@ const WhoWeServePage = () => {
           <span className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 px-5 py-2 rounded-full text-sm font-bold tracking-wide shadow-lg">
             OUR EXPERTISE
           </span>
-          <h1 className="text-5xl font-bold mt-6 mb-4">WHO WE SERVE</h1>
+          <h1 className="text-5xl font-bold mt-6 mb-4">Who We Serve</h1>
           <p className="text-xl text-slate-100 max-w-3xl mx-auto leading-relaxed">
             Comprehensive solutions designed to empower your organization with
             strategic insights and technological excellence.
