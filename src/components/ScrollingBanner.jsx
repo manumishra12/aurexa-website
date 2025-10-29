@@ -2,8 +2,23 @@ import React from 'react';
 
 const ScrollingBanner = () => {
   const features = [
-    'DevOps Automation', 'DevOps Automation', 'DevOps Automation', 'DevOps Automation', 
-    'DevOps Automation', 'DevOps Automation', 'DevOps Automation', 'DevOps Automation'
+    'DevOps Automation',
+    'Agentic AI',
+    'Hyper-Automation',
+    'Open Banking API\'s',
+    'Ai-Augmented Tools',
+    'Omnichannel Engagement',
+    'Data Mesh',
+    'AI Workforce Agents',
+    'Real-Time Fraud Detection',
+    'Zero-Trust Architecture',
+    'Quantum Cryptography',
+    'Edge AI',
+    'Digital Twin',
+    'Network as a Service (NaaS)',
+    'AI sourcing',
+    'Voice Commerce',
+    'Predictive Logistics'
   ];
 
   return (

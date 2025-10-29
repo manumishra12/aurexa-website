@@ -3,6 +3,52 @@ import React, { useState } from "react";
 import Navigation from "../components/Navigation";
 import Footer from "../components/FooterCTA";
 
+// Simple SVG icon components (no external library needed)
+const MapPinIcon = () => (
+  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+  </svg>
+);
+
+const GlobeIcon = () => (
+  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+  </svg>
+);
+
+const TrendingUpIcon = () => (
+  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+  </svg>
+);
+
+const ZapIcon = () => (
+  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+  </svg>
+);
+
+const TargetIcon = () => (
+  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" strokeWidth={2} />
+    <circle cx="12" cy="12" r="6" strokeWidth={2} />
+    <circle cx="12" cy="12" r="2" strokeWidth={2} />
+  </svg>
+);
+
+const BuildingIcon = ({ size = "w-10 h-10" }) => (
+  <svg className={size} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+  </svg>
+);
+
+const ShieldIcon = () => (
+  <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+  </svg>
+);
+
 const WhoWeServePage = () => {
   const [activeTab, setActiveTab] = useState("industry");
 
@@ -30,7 +76,7 @@ const WhoWeServePage = () => {
     {
       name: "IT Architecture & Strategic Planning",
       desc: "Designing future-ready digital frameworks for sustainable growth.",
-      img: "https://images.unsplash.com/photo-1562601553-b67e9e26f364?auto=format&fit=crop&w=800&q=80",
+      img: "https://images.unsplash.com/photo-1562601553-b67e9e26f364?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074",
     },
     {
       name: "Enterprise Risk & Compliance Management",
@@ -50,12 +96,12 @@ const WhoWeServePage = () => {
     {
       name: "Industry 4.0 & Engineering Tech",
       desc: "Revolutionizing industries through smart manufacturing and automation.",
-      img: "https://images.unsplash.com/photo-1716191300020-b52dec5b70a8?auto=format&fit=crop&w=800&q=80",
+      img: "https://images.unsplash.com/photo-1716191300020-b52dec5b70a8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
     },
     {
       name: "Financial Services & Digital Banking",
       desc: "Modernizing finance through secure and seamless digital solutions.",
-      img: "https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?auto=format&fit=crop&w=800&q=80",
+      img: "https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
     },
     {
       name: "Green Tech & Sustainable Solutions",
@@ -75,7 +121,7 @@ const WhoWeServePage = () => {
     {
       name: "RegTech & Compliance Solutions",
       desc: "Enhancing transparency and control with advanced regulatory tech.",
-      img: "https://plus.unsplash.com/premium_photo-1661696766614-49a79483876c?auto=format&fit=crop&w=800&q=80",
+      img: "https://plus.unsplash.com/premium_photo-1661696766614-49a79483876c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
     },
     {
       name: "Digital Procurement & Supply Solutions",
@@ -100,19 +146,59 @@ const WhoWeServePage = () => {
   ];
 
   const geographies = [
-    { name: "North America", desc: "Deep market intelligence across US & Canada." },
-    { name: "Europe", desc: "Expertise in GDPR, fintech, and industrial digitalization." },
-    { name: "Latin America", desc: "Rapidly growing tech adoption across Brazil & Mexico." },
-    { name: "Middle East", desc: "Smart city and energy digital transformation expertise." },
-    { name: "Asia Pacific", desc: "AI and robotics leadership across China, Japan, Korea." },
-    { name: "South Asia", desc: "Mobile-first SaaS growth, including India & Bangladesh." },
-    { name: "Africa", desc: "Digital leapfrogging, fintech innovation & infra growth." },
+    {
+      name: "North America",
+      desc: "Deep market intelligence across US & Canada.",
+      icon: <MapPinIcon />,
+    },
+    {
+      name: "Europe",
+      desc: "Expertise in GDPR, fintech, and industrial digitalization.",
+      icon: <GlobeIcon />,
+    },
+    {
+      name: "Latin America",
+      desc: "Rapidly growing tech adoption across Brazil & Mexico.",
+      icon: <TrendingUpIcon />,
+    },
+    {
+      name: "Middle East",
+      desc: "Smart city and energy digital transformation expertise.",
+      icon: <ZapIcon />,
+    },
+    {
+      name: "Asia Pacific",
+      desc: "AI and robotics leadership across China, Japan, Korea.",
+      icon: <TargetIcon />,
+    },
+    {
+      name: "South Asia",
+      desc: "Mobile-first SaaS growth, including India & Bangladesh.",
+      icon: <GlobeIcon />,
+    },
+    {
+      name: "Africa",
+      desc: "Digital leapfrogging, fintech innovation & infra growth.",
+      icon: <TrendingUpIcon />,
+    },
   ];
 
   const industryTypes = [
-    { type: "SMB", desc: "Fast deployment, cost-efficient, scalable growth." },
-    { type: "Large", desc: "Structured digital transformation and integration." },
-    { type: "Enterprise", desc: "Global consistency, governance & long-term value." },
+    {
+      type: "SMB",
+      desc: "Fast deployment, cost-efficient, scalable growth.",
+      icon: <BuildingIcon size="w-10 h-10" />,
+    },
+    {
+      type: "Large",
+      desc: "Structured digital transformation and integration.",
+      icon: <BuildingIcon size="w-12 h-12" />,
+    },
+    {
+      type: "Enterprise",
+      desc: "Global consistency, governance & long-term value.",
+      icon: <BuildingIcon size="w-14 h-14" />,
+    },
   ];
 
   const changeMakers = [
@@ -120,21 +206,25 @@ const WhoWeServePage = () => {
       role: "Strategic",
       titles: "CEO, CMO, CTO, CFO",
       value: "Driving transformation and market expansion.",
+      icon: <TargetIcon />,
     },
     {
       role: "Product",
       titles: "VP Product, VP Architect, VP Product Marketing",
       value: "Building winning products with market insights.",
+      icon: <ZapIcon />,
     },
     {
       role: "Marketing",
       titles: "CMO, VP Sales",
       value: "Revenue growth through data-led customer engagement.",
+      icon: <TrendingUpIcon />,
     },
     {
       role: "Finance | Compliance | Governance",
       titles: "CFO, CCO",
       value: "Ensuring financial health, compliance & ROI.",
+      icon: <ShieldIcon />,
     },
   ];
 
@@ -151,54 +241,69 @@ const WhoWeServePage = () => {
       <main className="flex-grow py-20 px-6 lg:px-12 max-w-7xl mx-auto">
         {/* ----------- Header ---------- */}
         <div className="text-center mb-16">
-          <span className="inline-block bg-gradient-to-r from-orange-500 to-orange-500 px-4 py-1 rounded-full text-xs font-bold">
+          <span className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 px-5 py-2 rounded-full text-sm font-bold tracking-wide shadow-lg">
             OUR EXPERTISE
           </span>
-          <h1 className="text-4xl font-bold mt-4">WHO WE SERVE</h1>
-          <p className="text-lg text-slate-200 max-w-2xl mx-auto">
-            Comprehensive solutions designed to empower your organization with strategic insights and technological excellence.
+          <h1 className="text-5xl font-bold mt-6 mb-4">WHO WE SERVE</h1>
+          <p className="text-xl text-slate-100 max-w-3xl mx-auto leading-relaxed">
+            Comprehensive solutions designed to empower your organization with
+            strategic insights and technological excellence.
           </p>
         </div>
 
         {/* ----------- Tabs ---------- */}
-        <div className=" mb-10">
+        <div className="mb-12">
           <div className="flex flex-wrap gap-4 justify-center">
-            {["industry", "geography", "industryType", "changeMaker"].map((tab) => (
-              <button
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                className={`px-6 py-3 rounded-full font-medium transition ${
-                  activeTab === tab
-                    ? "bg-cyan-500 text-white"
-                    : "bg-white/10 text-slate-200 hover:bg-white/20"
-                }`}
-              >
-                {tab === "industry"
-                  ? "Industry"
-                  : tab === "geography"
-                  ? "Geography"
-                  : tab === "industryType"
-                  ? "Industry Type"
-                  : "Change Makers"}
-              </button>
-            ))}
+            {["industry", "geography", "industryType", "changeMaker"].map(
+              (tab) => (
+                <button
+                  key={tab}
+                  onClick={() => setActiveTab(tab)}
+                  className={`px-8 py-3 rounded-full font-semibold text-base transition-all duration-300 ${
+                    activeTab === tab
+                      ? "bg-cyan-500 text-white shadow-xl scale-105"
+                      : "bg-white/15 text-slate-100 hover:bg-white/25 hover:scale-105"
+                  }`}
+                >
+                  {tab === "industry"
+                    ? "Industry"
+                    : tab === "geography"
+                    ? "Geography"
+                    : tab === "industryType"
+                    ? "Industry Type"
+                    : "Change Makers"}
+                </button>
+              )
+            )}
           </div>
         </div>
 
         {/* ----------- Tab Content ---------- */}
-        <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
-
+        <div className="bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-lg rounded-3xl p-10 border border-white/30 shadow-2xl">
           {/* ✅ INDUSTRY TAB — SHOW SERVICES WITH IMAGES */}
           {activeTab === "industry" && (
             <>
-              <h2 className="text-2xl font-bold mb-6">Our Services Across Industries</h2>
+              <h2 className="text-3xl font-bold mb-8 text-white">
+                Our Services Across Industries
+              </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {services.map((service, i) => (
-                  <div key={i} className="rounded-xl overflow-hidden bg-white/5 border border-white/10 hover:shadow-xl hover:scale-105 transition">
-                    <img src={service.img} className="h-48 w-full object-cover" />
+                  <div
+                    key={i}
+                    className="rounded-2xl overflow-hidden bg-gradient-to-br from-slate-800/90 to-slate-900/90 border border-white/20 hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                  >
+                    <img
+                      src={service.img}
+                      alt={service.name}
+                      className="h-48 w-full object-cover"
+                    />
                     <div className="p-6">
-                      <h4 className="text-lg font-semibold mb-2 text-white">{service.name}</h4>
-                      <p className="text-sm text-slate-300">{service.desc}</p>
+                      <h4 className="text-xl font-bold mb-3 text-white leading-tight">
+                        {service.name}
+                      </h4>
+                      <p className="text-base text-slate-200 leading-relaxed">
+                        {service.desc}
+                      </p>
                     </div>
                   </div>
                 ))}
@@ -209,12 +314,24 @@ const WhoWeServePage = () => {
           {/* ✅ GEOGRAPHY TAB */}
           {activeTab === "geography" && (
             <>
-              <h2 className="text-2xl font-bold mb-6">Global Reach. Local Expertise.</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <h2 className="text-3xl font-bold mb-8 text-white">
+                Global Reach. Local Expertise.
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {geographies.map((geo, i) => (
-                  <div key={i} className="bg-white/5 rounded-xl p-6 border border-white/20 hover:scale-105 transition">
-                    <h3 className="text-xl font-semibold text-white">{geo.name}</h3>
-                    <p className="mt-2 text-slate-300 text-sm">{geo.desc}</p>
+                  <div
+                    key={i}
+                    className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 rounded-2xl p-8 border border-white/30 hover:scale-105 hover:shadow-2xl transition-all duration-300"
+                  >
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="text-cyan-400">{geo.icon}</div>
+                      <h3 className="text-2xl font-bold text-white">
+                        {geo.name}
+                      </h3>
+                    </div>
+                    <p className="text-base text-slate-200 leading-relaxed">
+                      {geo.desc}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -224,12 +341,24 @@ const WhoWeServePage = () => {
           {/* ✅ INDUSTRY TYPE TAB */}
           {activeTab === "industryType" && (
             <>
-              <h2 className="text-2xl font-bold mb-6">Solutions for Every Organization Size</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+              <h2 className="text-3xl font-bold mb-8 text-white">
+                Solutions for Every Organization Size
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
                 {industryTypes.map((size, i) => (
-                  <div key={i} className="bg-white/5 rounded-xl p-6 border border-white/20 hover:scale-105 transition">
-                    <h3 className="text-xl font-bold">{size.type}</h3>
-                    <p className="mt-2 text-slate-300">{size.desc}</p>
+                  <div
+                    key={i}
+                    className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 rounded-2xl p-10 border border-white/30 hover:scale-105 hover:shadow-2xl transition-all duration-300 text-center"
+                  >
+                    <div className="flex justify-center mb-6 text-cyan-400">
+                      {size.icon}
+                    </div>
+                    <h3 className="text-3xl font-bold text-white mb-4">
+                      {size.type}
+                    </h3>
+                    <p className="text-base text-slate-200 leading-relaxed">
+                      {size.desc}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -239,13 +368,29 @@ const WhoWeServePage = () => {
           {/* ✅ CHANGE MAKERS TAB */}
           {activeTab === "changeMaker" && (
             <>
-              <h2 className="text-2xl font-bold mb-6">Empowering Change Makers</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <h2 className="text-3xl font-bold mb-8 text-white">
+                Empowering Change Makers
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 {changeMakers.map((maker, i) => (
-                  <div key={i} className="bg-white/5 rounded-xl p-6 border border-white/20 hover:scale-105 transition">
-                    <h3 className="text-xl font-bold">{maker.role}</h3>
-                    <p className="mt-2 text-slate-300 text-sm"><strong>Titles: </strong>{maker.titles}</p>
-                    <p className="mt-3 text-slate-400 text-xs"><strong>Value Delivered:</strong> {maker.value}</p>
+                  <div
+                    key={i}
+                    className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 rounded-2xl p-8 border border-white/30 hover:scale-105 hover:shadow-2xl transition-all duration-300"
+                  >
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="text-cyan-400">{maker.icon}</div>
+                      <h3 className="text-2xl font-bold text-white">
+                        {maker.role}
+                      </h3>
+                    </div>
+                    <p className="text-base text-slate-200 mb-4">
+                      <strong className="text-white">Titles: </strong>
+                      {maker.titles}
+                    </p>
+                    <p className="text-base text-slate-300">
+                      <strong className="text-white">Value Delivered: </strong>
+                      {maker.value}
+                    </p>
                   </div>
                 ))}
               </div>
