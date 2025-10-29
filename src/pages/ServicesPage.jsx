@@ -291,12 +291,9 @@ const WhoWeServePage = () => {
 
         {/* ----------- Tab Content ---------- */}
         <div className="bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-lg rounded-3xl p-10 border border-white/30 shadow-2xl">
-          {/* ✅ INDUSTRY TAB — SHOW SERVICES WITH IMAGES */}
+          {/*  INDUSTRY TAB — SHOW SERVICES WITH IMAGES */}
           {activeTab === "industry" && (
             <>
-              <h2 className="text-3xl font-bold mb-8 text-white">
-                Our Services Across Industries
-              </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {services.map((service, i) => (
                   <div
@@ -322,7 +319,7 @@ const WhoWeServePage = () => {
             </>
           )}
 
-          {/* ✅ GEOGRAPHY TAB */}
+          {/*  GEOGRAPHY TAB */}
           {activeTab === "geography" && (
             <>
               <h2 className="text-3xl font-bold mb-8 text-white">
@@ -349,7 +346,7 @@ const WhoWeServePage = () => {
             </>
           )}
 
-          {/* ✅ INDUSTRY TYPE TAB */}
+          {/*  INDUSTRY TYPE TAB */}
           {activeTab === "industryType" && (
             <>
               <h2 className="text-3xl font-bold mb-8 text-white">
@@ -376,7 +373,7 @@ const WhoWeServePage = () => {
             </>
           )}
 
-          {/* ✅ CHANGE MAKERS TAB */}
+          {/*  CHANGE MAKERS TAB */}
           {activeTab === "changeMaker" && (
             <>
               <h2 className="text-3xl font-bold mb-8 text-white">
